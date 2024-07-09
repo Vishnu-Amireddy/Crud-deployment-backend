@@ -2,9 +2,9 @@ const express = require("express");
 const cors =require('cors');
 
 const mongoose=require("mongoose");
-const studentRoute=require(".././controller/studentRoute");
-const teacherRoute=require(".././controller/teacherRoute");
-const parentRoute=require(".././controller/parentRoute");
+const studentRoute=require("./controller/studentRoute");
+const teacherRoute=require("./controller/teacherRoute");
+const parentRoute=require("./controller/parentRoute");
 const app=express();
 mongoose.set("strictQuery",true);
 mongoose.connect("mongodb+srv://vishnu:12345@cluster0.5wniox1.mongodb.net/schooldb");
